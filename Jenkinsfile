@@ -1,9 +1,10 @@
 pipeline {
     agent any 
     stages {
-        stage('Clone') {
+        stage('Demo') {
             steps {
-                git 'https://github.com/dangdan2807/learn-jenkins.git'
+                // git 'https://github.com/dangdan2807/learn-jenkins.git'
+                echo '123'
             }
         }
     }
