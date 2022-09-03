@@ -1,0 +1,27 @@
+{
+  "name": "demo-jenkins",
+  "version": "1.0.0",
+  "description": "demo jenkins",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangdan2807/learn-jenkins.git"
+  },
+  "keywords": [
+    "learn",
+    "jenkins"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dangdan2807/learn-jenkins/issues"
+  },
+  "homepage": "https://github.com/dangdan2807/learn-jenkins#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
