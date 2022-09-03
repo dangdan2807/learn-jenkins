@@ -3,7 +3,7 @@ const app = express();
 const POST = process.env.POST || 3000;
 
 app.get('/', (req, res) => {
-    res.send('home');
+    res.send('welcome');
 });
 
 app.listen(POST, () => {
