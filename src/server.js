@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
     res.send('welcome');
 });
 
+app.get('/contract', (req, res) => {
+    res.send('contract');
+});
+
 app.listen(POST, () => {
     console.log(`Server is running on http://localhost:${POST}`);
 });
