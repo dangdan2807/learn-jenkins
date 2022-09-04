@@ -1,9 +1,9 @@
 pipeline {
     agent any 
     stages {
-        stage('Demo stage') {
+        stage('Push gitlab') {
             steps {
-                echo 'Hello 3'
+                echo 'Hello world'
             }
         }
     }
