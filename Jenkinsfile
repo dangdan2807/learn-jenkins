@@ -1,9 +1,8 @@
 pipeline {
     agent any 
     stages {
-        stage('Demo') {
+        stage('Demo stage') {
             steps {
-                // git 'https://github.com/dangdan2807/learn-jenkins.git'
                 echo 'Hello 2'
             }
         }
