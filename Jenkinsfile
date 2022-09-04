@@ -4,7 +4,7 @@ pipeline {
         stage('Demo') {
             steps {
                 // git 'https://github.com/dangdan2807/learn-jenkins.git'
-                echo 'Hello'
+                echo 'Hello 1'
             }
         }
     }
