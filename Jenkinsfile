@@ -6,12 +6,19 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/dangdan2807/learn-jenkins'
             }
         }
-        stage('build and push docker') {
+        stage('build docker') {
             steps {
                 // This step should not normally be used in your script. Consult the inline help for details.
                 withDockerRegistry(credentialsId: 'dockerhub', url: 'https://index.docker.io/v1/') {
                     bat 'docker build -t dangdan2807/learn-jenkins:v1.0 .'
-                    bat 'docker push dangdan2807/learn-jenkins:v1.0 .'
+                }
+            }
+        }
+        stage('build docker') {
+            steps {
+                // This step should not normally be used in your script. Consult the inline help for details.
+                withDockerRegistry(credentialsId: 'dockerhub', url: 'https://index.docker.io/v1/') {
+                    bat 'docker push dangdan2807/learn-jenkins:v1.0'
                 }
             }
         }
