@@ -1,9 +1,9 @@
 pipeline {
     agent any 
     stages {
-        stage('Push gitlab') {
+        stage('clone github') {
             steps {
-                echo 'Hello world'
+                git branch: 'main', url: 'https://github.com/dangdan2807/learn-jenkins'
             }
         }
         stage('build and push docker') {
