@@ -10,7 +10,7 @@ pipeline {
             steps {
                 // This step should not normally be used in your script. Consult the inline help for details.
                 withDockerRegistry(credentialsId: 'dockerhub', url: 'https://index.docker.io/v1/') {
-                    bat 'docker build -t dangdan2807/learn-jenkins'
+                    bat 'docker build -t https://github.com/dangdan2807/learn-jenkins'
                     bat 'docker push dangdan2807/learn-jenkins'
                 }
             }
