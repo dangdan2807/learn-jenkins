@@ -14,7 +14,7 @@ pipeline {
                 }
             }
         }
-        stage('build docker') {
+        stage('push docker') {
             steps {
                 // This step should not normally be used in your script. Consult the inline help for details.
                 withDockerRegistry(credentialsId: 'dockerhub', url: 'https://index.docker.io/v1/') {
